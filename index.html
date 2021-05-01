@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.js"></script>
+
+<script async defer src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="center"> To-Do List </h1>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="newTask">New Task</label>
+                    <div class="input-group">
+                    <span class="input-group-addon" id="inpNewTask">Enter Task Text</span>
+                    <input type="text" class="form-control" id="inpnewTask" aria-describedby="New Task Text">
+                    </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-3" style="padding: 1pt;">
+                        <button class="btn btn-success btn-block m-2" disabled id="btnAdd">
+                            <i class="fas fa-plus"></i> Add 
+                        </button>
+                    </div>
+                    <div class="col-md-3" style="padding: 1pt;">
+                        <button class="btn btn-danger btn-block m-2" disabled id="btnClear">
+                            <i class="fas fa-backspace"></i> Reset
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3" style="padding: 1pt;">
+                        <button class="btn btn-info btn-block m-2" disabled id="btnSort">
+                            <i class="fas fa-sort-amount-up-alt"></i> Sort
+                        </button>
+                    </div>
+                    <div class="col-md-3" style="padding: 1pt;">
+                        <button class="btn btn-warning btn-block m-2" disabled id="btnCleanup">
+                            <i class="fas fa-trash"></i>Clean
+                        </button>
+                    </div>
+                        
+                    
+                </div>
+            </div> 
+            
+        </div>
+<!--        <div class="col-4" style="margin-left: auto;">
+                <button class="btn btn-success col m-2" id="btnAdd">
+                    <i class="fas fa-plus"></i> Add 
+                </button>
+
+                <button class="btn btn-danger col m-2" id="btnClear">
+                    <i class="fas fa-backspace"></i> Reset
+                </button>
+                <button class="btn btn-info col m-2" id="btnSort">
+                    <i class="fas fa-sort-amount-up-alt"></i> Sort
+                </button>
+                <button class="btn btn-warning col m-2">
+                    <i class="fas fa-trash"></i>Cleanup
+                </button>
+        </div>-->
+        <ul class="row list-group" style="padding-top: 10px;" id="ulTask">
+          </ul>
+    </div> 
+</body>
+</html>
